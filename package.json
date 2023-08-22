@@ -1,0 +1,29 @@
+{
+  "name": "commander-js-calculator",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/commander.js",
+  "scripts": {
+    "setup": "npm run permission ; npm link",
+    "permission": "chmod u+x bin/*",
+    "format": "prettier --write .  --config ./.prettierrc"
+  },
+  "keywords": [
+    "nodejs",
+    "commander",
+    "cli",
+    "javascript",
+    "utility"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.0.0",
+    "prettier": "^3.0.1"
+  },
+  "bin": {
+    "mwc": "./bin/commander.js calculate",
+    "mwp": "./bin/procargvs.js calculate"
+  }
+}
